@@ -1,19 +1,19 @@
 # MacRemote Releases
 
-Download MacRemote installers from the [Releases page](https://github.com/mistnick/MacRemote-Releases/releases).
+Download installers from the [Releases page](https://github.com/mistnick/MacRemote-Releases/releases/latest).
 
 ## Install
 
-MacRemote 0.1.0 is for Apple Silicon Macs running macOS 14 or later.
+MacRemote is for Apple Silicon Macs running macOS 14 or later.
 
-1. Download `MacRemote-0.1.0-arm64.dmg` from the latest release.
+1. Download the latest `MacRemote-*-arm64.dmg` asset.
 2. Open the disk image and drag **MacRemote** to **Applications**.
-3. Launch MacRemote and grant Screen Recording and Accessibility permissions when prompted.
+3. Launch MacRemote and grant Screen Recording and Accessibility permissions when prompted on the Mac being shared.
 
-The installer is signed with Developer ID and notarized by Apple. Verify the downloaded image with the SHA-256 file attached to the release:
+The installer is signed with Developer ID and notarized by Apple. Each release includes a SHA-256 file; after downloading both assets into the same folder, run the matching command, for example:
 
 ```sh
-shasum -a 256 -c MacRemote-0.1.0-arm64.dmg.sha256
+shasum -a 256 -c MacRemote-0.1.1-arm64.dmg.sha256
 ```
 
-This is an early access build for pilot testing. The source repository is private.
+These are early access builds for pilot testing. The source repository is private.
