@@ -1,6 +1,6 @@
 # MacRemote Releases
 
-Download installers from the [Releases page](https://github.com/mistnick/MacRemote-Releases/releases/latest).
+Download installers from the [Releases page](https://github.com/mistnick/MacRemote-Releases/releases).
 
 ## Install
 
