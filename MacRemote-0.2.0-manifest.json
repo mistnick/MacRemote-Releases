@@ -1,6 +1,6 @@
 {
   "version": "0.2.0",
-  "prerelease": true,
+  "prerelease": false,
   "createdAt": "2026-10-18T16:17:16.031776+00:00",
   "sourceCommit": "dae5873c8349caba448c3048f7fd906e2943b4f0",
   "platform": {
@@ -12,7 +12,7 @@
   "installerSigned": false,
   "notarized": false,
   "physicalLoginWindowValidation": "pending",
-  "backendDeployment": "not performed",
+  "backendDeployment": "published at https://mr.kelion.it",
   "validation": {
     "swiftTestsPassed": 21,
     "postgresIntegrationTestsPassed": true,
@@ -31,5 +31,8 @@
       "size": 29568792,
       "sha256": "9446cdd98af5d670f4bc6ba662c5fa6ff9e37f04ca411c5b85e23a196f02aa81"
     }
-  ]
+  ],
+  "channel": "stable",
+  "backendSourceRevision": "eb33971",
+  "publicConsole": "https://mr.kelion.it/admin/"
 }
