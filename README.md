@@ -1,25 +1,15 @@
-# MacRemote Releases
+# MacRemote
 
-Download installers from the [Releases page](https://github.com/mistnick/MacRemote-Releases/releases).
+Install the current distribution from [GitHub Releases](https://github.com/mistnick/MacRemote-Releases/releases/latest).
 
-## Install or update
+## New installation
 
-MacRemote requires Apple Silicon and macOS 14 or later.
+Apple Silicon and macOS 14 or later are required. Install the app from the DMG, or use the host-service PKG to install the app and its optional machine components. Follow the service guide attached to the release. Sign in to your company and explicitly authorize screen recording, input and receiver keys.
 
-1. In MacRemote 0.1.5, check for updates and download 0.2.0, or download `MacRemote-0.2.0-arm64.dmg` from [the release](https://github.com/mistnick/MacRemote-Releases/releases/tag/v0.2.0).
-2. Open the disk image and drag MacRemote into Applications, replacing the previous copy, then reopen it.
-3. Grant Screen Recording and Accessibility permissions on the Mac being shared.
+The public console is [https://mr.kelion.it/admin/](https://mr.kelion.it/admin/). Credentials are delivered privately. The first administrator must change the temporary password and configure TOTP.
 
-For the optional machine service, use `MacRemote-HostService-0.2.0-arm64-unsigned.pkg` and the service guide attached to the release. Use the service package when updating a Mac with the service already installed.
+The application, service, browser panel and backend share one API contract. The initial database schema requires an empty application database. API calls use access tokens. See [the release notes](RELEASE_NOTES.md).
 
-Version 0.2.0 is offered on the channel used by the existing stable updater. It remains an Early Access build: the app and DMG are Developer ID signed, the PKG has no installer signature, and the 0.2.0 artifacts are not notarized. Stable DMGs through 0.1.5 were notarized. Real LoginWindow capture and input, reboot and rollback still require physical validation. FileVault preboot is excluded.
+## Artifact status
 
-Each binary asset has a SHA-256 checksum file. For example:
-
-```sh
-shasum -a 256 -c MacRemote-0.2.0-arm64.dmg.sha256
-```
-
-## Public administration
-
-The administration console is [https://mr.kelion.it/admin/](https://mr.kelion.it/admin/). The backend has been updated with web sign-in configuration. See [the 0.2.0 release notes](RELEASE_NOTES-0.2.0.md) for features, installation and validation limits. Credentials are provided privately; the source repository is private.
+The app and DMG are Developer ID signed. The PKG named `unsigned` has no Installer signature. This distribution is not notarized. Check the attached manifest and SHA-256 files. LoginWindow capture/input and the hardware/network validation matrix still require physical validation. FileVault preboot is excluded.

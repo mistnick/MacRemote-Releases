@@ -1,0 +1,28 @@
+{
+  "version": "0.3.0",
+  "sourceCommit": "98ab4787f3aa019163484ce4a4f737c6f1483d8a",
+  "createdAt": "2026-10-18T16:51:48.083240+00:00",
+  "platform": {
+    "minimumMacOS": "14.0",
+    "architecture": "arm64"
+  },
+  "api": "/api",
+  "deviceAPI": "/api/agent",
+  "database": "complete initial schema; empty database required",
+  "applicationSigned": true,
+  "installerSigned": false,
+  "notarized": false,
+  "hardwareValidation": "pending",
+  "artifacts": [
+    {
+      "name": "MacRemote-0.3.0-arm64.dmg",
+      "size": 32741898,
+      "sha256": "a9e7c31303cb2f7a3a7fb735f94e93ab9fd6a6b2f5463951df5a8a967cdde289"
+    },
+    {
+      "name": "MacRemote-HostService-0.3.0-arm64-unsigned.pkg",
+      "size": 29595201,
+      "sha256": "965140a72d3b67eaaa79ddd9e7d8108d4e66fd69485e299d04f648745acedb62"
+    }
+  ]
+}
